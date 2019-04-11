@@ -5,7 +5,7 @@ import Todos from './components/Todos.js'
 import Header from './components/layouts/Header.js'
 import AddTodo from './components/AddTodo.js'
 import About from './components/pages/About.js'
-// import uuid from 'uuid'
+import uuid from 'uuid'
 import Axios from 'axios'
 
 class App extends Component {
