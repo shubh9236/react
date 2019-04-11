@@ -5,7 +5,7 @@ function Header() {
 		<header style={headerStyle}>
 			<h1>Todo List</h1>
 			{/* in react instead of a tags we use Link */}
-			<Link style={linkStyle} to="/">Home</Link> | <Link style={linkStyle} to="/about">About</Link>
+			<Link style={linkStyle} to="/react">Home</Link> | <Link style={linkStyle} to="/about">About</Link>
 		</header>
 		)
 }
