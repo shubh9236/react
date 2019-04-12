@@ -7,6 +7,7 @@ import AddTodo from './components/AddTodo.js'
 import About from './components/pages/About.js'
 import uuid from 'uuid'
 import Axios from 'axios'
+import { Helmet } from "react-helmet"
 
 class App extends Component {
   state = {
@@ -94,6 +95,10 @@ class App extends Component {
             <Header />
              {/* if we dont use exact then this will show in every route but we want to show only when we visit '/react' route */}
             <Route exact path='/react' render={props => (
+              <Helmet>
+                  <meta charSet="utf-8" />
+                  <title>Inside react route</title>
+              </Helmet>              
               <React.Fragment>
                 <AddTodo addTodo={this.addTodo}/>
                 <Todos todos= {this.state.todos} markComplete = {this.markComplete} delTodo = {this.delTodo}/>              
