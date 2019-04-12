@@ -96,10 +96,10 @@ class App extends Component {
              {/* if we dont use exact then this will show in every route but we want to show only when we visit '/react' route */}
             <Route exact path='/react' render={props => (              
               <React.Fragment>
-                <Helmet>
-                    <meta charSet="utf-8" />
-                    <title>React App title change check</title>
-                </Helmet>              
+                // <Helmet>
+                //     <meta charSet="utf-8" />
+                //     <title>React App title change check</title>
+                // </Helmet>              
                 <AddTodo addTodo={this.addTodo}/>
                 <Todos todos= {this.state.todos} markComplete = {this.markComplete} delTodo = {this.delTodo}/>              
               </React.Fragment>
