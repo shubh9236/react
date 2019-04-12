@@ -98,8 +98,7 @@ class App extends Component {
               <React.Fragment>
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title>My Title</title>
-                    <link rel="canonical" href="http://mysite.com/example" />
+                    <title>React App title change check</title>
                 </Helmet>              
                 <AddTodo addTodo={this.addTodo}/>
                 <Todos todos= {this.state.todos} markComplete = {this.markComplete} delTodo = {this.delTodo}/>              
