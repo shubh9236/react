@@ -8,6 +8,7 @@ import About from './components/pages/About.js'
 import uuid from 'uuid'
 import Axios from 'axios'
 import { Helmet } from "react-helmet";
+import SeoHead from './components/layouts/SeoHead.js'
 
 class App extends Component {
   state = {
@@ -96,10 +97,11 @@ class App extends Component {
              {/* if we dont use exact then this will show in every route but we want to show only when we visit '/react' route */}
             <Route exact path='/react' render={props => (              
               <React.Fragment>
-                <Helmet>
+                {/*<Helmet>
                     <meta charSet="utf-8" />
                     <title>React App title change check</title>
-                </Helmet>              
+                </Helmet>*/}  
+                <SeoHead title="React To do app" description="create a todo list app" url="https://shubh9236.github.io/react" />            
                 <AddTodo addTodo={this.addTodo}/>
                 <Todos todos= {this.state.todos} markComplete = {this.markComplete} delTodo = {this.delTodo}/>              
               </React.Fragment>
