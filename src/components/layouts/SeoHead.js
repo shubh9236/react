@@ -11,7 +11,7 @@ const SeoHead = props =>{
 				<meta name="description" content={props.description || defaultDescription} />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<meta property = "url" content={props.url || defaultUrl} />
-				<meta property = "title" content={ptops.title || ""}>
+				<meta property = "title" content={ptops.title || ""} />
 			</Helmet>
 		</React.Fragment>
 	)
